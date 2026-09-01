@@ -39,11 +39,11 @@ function CvPage() {
             </li>
             <li className="flex items-center gap-2">
               <Mail className="h-4 w-4" />
-              contact@example.com
+              mialyrandrianasolo3@gmail.com
             </li>
             <li className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
-              +261 00 00 000 00
+              +261 34 99 442 14
             </li>
           </ul>
           <ul className="mt-4 flex gap-4 text-sm">
@@ -76,7 +76,7 @@ function CvPage() {
           <h2 className="text-lg font-semibold text-card-foreground">Profil</h2>
           <p className="mt-2 text-muted-foreground leading-relaxed">
             Développeuse web passionnée, je conçois des applications modernes et
-            performantes avec React, TypeScript et Tailwind CSS. Rigoureuse et
+             performantes avec IA, Python et PHP Symfony. Rigoureuse et
             créative, j’aime transformer des idées en expériences utilisateur
             fluides et accessibles.
           </p>
@@ -86,10 +86,10 @@ function CvPage() {
           <h2 className="text-lg font-semibold text-card-foreground">Compétences</h2>
           <div className="mt-3 flex flex-wrap gap-2">
             {[
-              "React",
-              "TypeScript",
-              "Tailwind CSS",
-              "Node.js",
+               "Python",
+               "Django",
+               "PHP",
+               "Symfony",
               "Git",
               "Figma",
               "TanStack Query",
@@ -122,7 +122,11 @@ function CvPage() {
         <section className="mt-6">
           <h2 className="text-lg font-semibold text-card-foreground">Formation</h2>
           <ul className="mt-3 space-y-2 text-muted-foreground">
-            <li>Licence en Informatique — Université d’Antananarivo</li>
+             <li>
+               Licence en Informatique —&nbsp;&nbsp;IS INFO Ampasamadinika
+               <br />
+               Master II en Informatique _ Université IS INFO Ampasamadinika
+             </li>
           </ul>
         </section>
       </article>
