@@ -1,5 +1,4 @@
 import { Link } from "@tanstack/react-router";
-import photoAsset from "@/assets/photo-profil.png.asset.json";
 
 export function Header() {
   return (
@@ -44,11 +43,6 @@ export function Header() {
             </Link>
           </li>
         </ul>
-        <img
-          src={photoAsset.url}
-          alt="RANDRIANASOLO Mialy"
-          className="h-9 w-9 rounded-full object-cover ring-2 ring-border"
-        />
       </nav>
     </header>
   );

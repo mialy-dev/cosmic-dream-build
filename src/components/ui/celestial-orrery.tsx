@@ -1,4 +1,5 @@
 import React from "react";
+import photoAsset from "@/assets/photo-profil.png.asset.json";
 
 const ORBITS = [
   { size: 220, duration: "18s", planet: "h-3 w-3 bg-primary" },
@@ -16,6 +17,14 @@ const STARS = Array.from({ length: 60 }, (_, i) => ({
 export const Component = () => {
   return (
     <section className="relative flex flex-1 w-full items-center justify-center overflow-hidden bg-background pt-14">
+      {/* Profile image top-left */}
+      <div className="absolute left-4 top-20 z-20 sm:left-8 sm:top-24">
+        <img
+          src={photoAsset.url}
+          alt="RANDRIANASOLO Mialy"
+          className="h-20 w-20 rounded-full object-cover ring-4 ring-primary/30 shadow-xl shadow-primary/20 sm:h-28 sm:w-28"
+        />
+      </div>
       {/* Starfield */}
       <div className="pointer-events-none absolute inset-0">
         {STARS.map((star, i) => (
