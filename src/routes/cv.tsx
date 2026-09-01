@@ -92,7 +92,7 @@ function CvPage() {
                "Symfony",
               "Git",
               "Figma",
-              "TanStack Query",
+               "IA",
               "Vite",
             ].map((skill) => (
               <span
