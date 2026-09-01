@@ -39,7 +39,7 @@ function ContactPage() {
               href="mailto:contact@example.com"
               className="underline underline-offset-4 transition-colors hover:text-primary"
             >
-              contact@example.com
+              mialyrandrianasolo3@gmail.com
             </a>
           </p>
           <p>
@@ -48,7 +48,7 @@ function ContactPage() {
               href="tel:+261000000000"
               className="underline underline-offset-4 transition-colors hover:text-primary"
             >
-              +261 00 00 000 00
+              +261 34 99 442 14
             </a>
           </p>
         </div>
