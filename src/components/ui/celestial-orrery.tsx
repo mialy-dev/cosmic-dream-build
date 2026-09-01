@@ -23,7 +23,16 @@ export const Component = () => {
         <img
           src={photoAsset.url}
           alt="RANDRIANASOLO Mialy"
-          className="h-20 w-20 rounded-full object-cover ring-4 ring-primary/30 shadow-xl shadow-primary/20 sm:h-28 sm:w-28"
+          className="h-28 w-28 rounded-full object-cover ring-4 ring-primary/30 shadow-xl shadow-primary/20 sm:h-40 sm:w-40"
+        />
+      </div>
+
+      {/* Computer image bottom-right */}
+      <div className="absolute bottom-6 right-4 z-20 sm:bottom-10 sm:right-8">
+        <img
+          src={ordinateurAsset.url}
+          alt="Ordinateur"
+          className="h-24 w-36 rounded-2xl object-cover shadow-2xl shadow-primary/20 brightness-[0.75] sm:h-32 sm:w-48"
         />
       </div>
       {/* Starfield */}
