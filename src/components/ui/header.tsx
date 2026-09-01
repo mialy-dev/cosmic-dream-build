@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import photoAsset from "@/assets/photo-profil.png.asset.json";
 
 export function Header() {
   return (
