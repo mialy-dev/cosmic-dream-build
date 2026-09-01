@@ -32,7 +32,7 @@ function AboutPage() {
         <p className="mt-6 text-muted-foreground leading-relaxed">
           Je suis <strong className="text-foreground">RANDRIANASOLO Mialy</strong>,
           développeuse web. Je conçois des interfaces modernes, performantes et
-          accessibles avec React, TypeScript et Tailwind CSS. Mon approche allie
+          accessibles avec IA, Python et PHP. Mon approche allie
           rigueur technique et sens du détail pour donner vie à des expériences
           utilisateur mémorables.
         </p>
