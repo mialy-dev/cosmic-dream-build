@@ -49,7 +49,7 @@ function CvPage() {
           <ul className="mt-4 flex gap-4 text-sm">
             <li>
               <a
-                href="https://github.com"
+                href="https://github.com/mialy-dev/PorteFolio-"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-primary transition-colors hover:underline"
