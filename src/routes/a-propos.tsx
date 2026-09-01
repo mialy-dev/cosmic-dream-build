@@ -24,7 +24,7 @@ export const Route = createFileRoute("/a-propos")({
 
 function AboutPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-background px-6 pt-14">
+    <main className="flex flex-1 flex-col items-center justify-center bg-background px-6 pt-14">
       <div className="max-w-2xl text-center">
         <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
           À propos
