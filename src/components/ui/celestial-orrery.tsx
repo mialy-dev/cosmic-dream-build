@@ -1,0 +1,67 @@
+import React from "react";
+
+const ORBITS = [
+  { size: 220, duration: "18s", planet: "h-3 w-3 bg-primary" },
+  { size: 360, duration: "32s", planet: "h-4 w-4 bg-accent-foreground" },
+  { size: 520, duration: "54s", planet: "h-2.5 w-2.5 bg-muted-foreground" },
+];
+
+const STARS = Array.from({ length: 60 }, (_, i) => ({
+  top: `${(i * 37) % 100}%`,
+  left: `${(i * 61) % 100}%`,
+  delay: `${(i % 12) * 0.45}s`,
+  size: i % 5 === 0 ? 2.5 : 1.5,
+}));
+
+export const Component = () => {
+  return (
+    <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-background">
+      {/* Starfield */}
+      <div className="pointer-events-none absolute inset-0">
+        {STARS.map((star, i) => (
+          <span
+            key={i}
+            className="absolute rounded-full bg-foreground animate-[twinkle_4s_ease-in-out_infinite]"
+            style={{
+              top: star.top,
+              left: star.left,
+              width: star.size,
+              height: star.size,
+              animationDelay: star.delay,
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Orbits */}
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+        {ORBITS.map((orbit) => (
+          <div
+            key={orbit.size}
+            className="absolute rounded-full border border-border animate-[orbit-rotate_linear_infinite]"
+            style={{
+              width: orbit.size,
+              height: orbit.size,
+              animationDuration: orbit.duration,
+            }}
+          >
+            <span
+              className={`absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full ${orbit.planet}`}
+            />
+          </div>
+        ))}
+        <div className="absolute h-24 w-24 rounded-full bg-primary/15 blur-2xl" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 px-6 text-center">
+        <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-5xl">
+          RANDRIANASOLO Mialy
+        </h1>
+        <p className="mt-3 text-sm uppercase tracking-[0.35em] text-muted-foreground sm:text-base">
+          Développeuse Web
+        </p>
+      </div>
+    </section>
+  );
+};
