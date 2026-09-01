@@ -93,7 +93,7 @@ function CvPage() {
               "Git",
               "Figma",
                "IA",
-              "Vite",
+               "...",
             ].map((skill) => (
               <span
                 key={skill}
