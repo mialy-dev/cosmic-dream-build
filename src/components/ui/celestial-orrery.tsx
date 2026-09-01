@@ -1,5 +1,6 @@
 import React from "react";
 import photoAsset from "@/assets/photo-profil.png.asset.json";
+import ordinateurAsset from "@/assets/photo-ordinateur.jpg.asset.json";
 
 const ORBITS = [
   { size: 220, duration: "18s", planet: "h-3 w-3 bg-primary" },
