@@ -15,7 +15,7 @@ const STARS = Array.from({ length: 60 }, (_, i) => ({
 
 export const Component = () => {
   return (
-    <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-background">
+    <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-background pt-14">
       {/* Starfield */}
       <div className="pointer-events-none absolute inset-0">
         {STARS.map((star, i) => (
