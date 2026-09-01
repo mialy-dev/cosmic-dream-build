@@ -35,16 +35,6 @@ export function Header() {
           </li>
           <li>
             <Link
-              to="/cv"
-              activeProps={{ className: "font-semibold text-foreground" }}
-              inactiveProps={{ className: "text-muted-foreground hover:text-foreground" }}
-              className="transition-colors"
-            >
-              CV
-            </Link>
-          </li>
-          <li>
-            <Link
               to="/contact"
               activeProps={{ className: "font-semibold text-foreground" }}
               inactiveProps={{ className: "text-muted-foreground hover:text-foreground" }}
