@@ -1,6 +1,6 @@
 import React from "react";
-import photoAsset from "@/assets/photo-profil.png.asset.json";
-import ordinateurAsset from "@/assets/photo-ordinateur.jpg.asset.json";
+import photoAsset from "@/assets/photo-profil.png";
+import ordinateurAsset from "@/assets/photo-ordinateur.jpg";
 
 const ORBITS = [
   { size: 220, duration: "18s", planet: "h-3 w-3 bg-primary" },
@@ -21,7 +21,7 @@ export const Component = () => {
       {/* Profile image top-left */}
       <div className="absolute left-4 top-20 z-20 sm:left-8 sm:top-24">
         <img
-          src={photoAsset.url}
+          src={photoAsset}
           alt="RANDRIANASOLO Mialy"
           className="h-28 w-28 rounded-full object-cover ring-4 ring-primary/30 shadow-xl shadow-primary/20 sm:h-40 sm:w-40"
         />
@@ -30,7 +30,7 @@ export const Component = () => {
       {/* Computer image bottom-right */}
       <div className="absolute bottom-6 right-4 z-20 sm:bottom-10 sm:right-8">
         <img
-          src={ordinateurAsset.url}
+          src={ordinateurAsset}
           alt="Ordinateur"
           className="h-24 w-36 rounded-2xl object-cover shadow-2xl shadow-primary/20 brightness-[0.75] sm:h-32 sm:w-48"
         />
